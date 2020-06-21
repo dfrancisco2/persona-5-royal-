@@ -1,0 +1,182 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: white;
+    background-color: #333;
+}
+
+img {
+    box-sizing: border-box;
+}
+
+.main-wrap {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.section-img {
+    width: 100%;
+}
+
+img,
+.banner-container,
+.nav,
+.content-container {
+    width: 100%;
+}
+
+h1,
+.card-title {
+    text-align: center;
+}
+
+
+/* BANNER */
+
+.banner-container {
+    background-image: url('../images/start-the-game.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+/* NAVBAR */
+
+.nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.royal-logo {
+    object-fit: contain;
+    height: 75px;
+    width: 10%;
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: goldenrod;
+}
+
+.nav ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0 0;
+    margin: 0;
+}
+
+.list-item {
+    font-size: 1.4rem;
+    display: inline;
+    margin: 0 20px;
+}
+
+.list-item a {
+    text-decoration: none;
+}
+
+
+/* ABOUT */
+
+.video {
+    width: 100%;
+    height: 55vh;
+}
+
+
+/* PHANTOM THEIVES */
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    grid-gap: 0.5rem;
+    width: 100%;
+}
+
+.card {
+    color: black;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+
+.card-img {
+    background-image: url('../images/background-card.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 40vh;
+}
+
+
+/* SMARTPHONES */
+
+@media only screen and (max-width: 1023px) {
+    .main-wrap {
+        margin: 0;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .banner-container {
+        background-position: center top;
+        background-size: contain;
+        height: 30vh;
+        width: 100%;
+    }
+    .video {
+        width: 100%;
+        height: 30vh;
+    }
+    .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Mobile*/
+
+@media only screen and (min-width: 1024px) {
+    .main-wrap {
+        width: 80%;
+    }
+    .video,
+    .card-img {
+        height: 40vh;
+    }
+}
+
+
+/* Tablets */
+
+@media only screen and (min-width: 1200px) {
+    .main-wrap {
+        width: 80%;
+    }
+    /* .top-card {
+        position: relative;
+        left: 100%;
+    } */
+}
